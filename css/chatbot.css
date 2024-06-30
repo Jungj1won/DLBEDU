@@ -1,0 +1,63 @@
+body {
+    font-family: 'Noto Sans', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* 상단 정렬 */
+    height: 100vh;
+    margin: 0;
+    background-color: #ffffff;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 400px; /* 최대 너비 설정 */
+}
+
+.logo img {
+    width: 80px;
+    margin: 20px auto;
+    display: block;
+}
+
+.main-text {
+    height: 300px;
+    background-color: #4a5af8;
+    color: #ffffff;
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 20px;
+    font-size: 24px;
+    line-height: 1.5;
+    display: flex;
+    justify-content: center;  /* 수평 중앙 정렬 */
+    align-items: center;      /* 수직 중앙 정렬 */
+    text-align: center;  
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.option {
+    background-color: #d0d8ff;
+    color: #333333;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+@media (min-width: 768px) {
+    .main-text {
+        font-size: 32px;
+    }
+
+    .option {
+        font-size: 18px;
+    }
+}

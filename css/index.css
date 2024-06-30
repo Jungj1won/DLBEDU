@@ -1,0 +1,107 @@
+body {
+    font-family: 'Noto Sans', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #ffffff;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.logo img {
+    width: 100%;
+    margin-bottom: 20px;
+    margin-top : 20px;
+}
+
+.text p {
+    margin: 0;
+    font-size: 60px;
+    line-height: 1.5;
+}
+
+.highlight {
+    color: #4a5af8;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+.btn {
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    padding: 10px 20px;
+    margin: 10px auto;
+    font-size: 16px;
+    color: #fff;
+    background-color: #4a5af8;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    text-align: left;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.btn span {
+    position: absolute;
+    right: 20px;
+}
+
+.btn.new {
+    background-color: #ff5f5f;
+}
+
+.new-text {
+    position: absolute;
+    top: -10px;
+    left: -50px;
+    font-size: 12px;
+    color: #4a5af8;
+    font-weight: bold;
+    animation: float 2s infinite;
+}
+/* .btn.new::before {
+    content: 'NEW!';
+    position: absolute;
+    top: -20px;
+    left: 20px;
+    font-size: 12px;
+    color: #ff5f5f;
+} */
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/* 반응형 디자인 */
+@media (min-width: 768px) {
+    .logo img {
+        width: 100px;
+    }
+
+    .tie img {
+        width: 50px;
+    }
+
+    .text p {
+        font-size: 24px;
+    }
+
+    .btn {
+        font-size: 18px;
+    }
+}
